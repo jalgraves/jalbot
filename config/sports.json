@@ -1,0 +1,48 @@
+{
+  "options": ["scores", "standings", "info", "schedule", "stats", "players", "roster", "career", "matchup", "category"],
+  "valid_args": {
+    "league": {
+      "type": "string",
+      "short": "l"
+    },
+    "team": {
+      "type": "string",
+      "short": "t"
+    },
+    "games": {
+      "type": "string",
+      "short": "g"
+    },
+    "season": {
+      "type": "string",
+      "short": "s"
+    },
+    "player": {
+      "type": "string",
+      "short": "p"
+    },
+    "week": {
+      "type": "string",
+      "short": "w"
+    },
+    "category": {
+      "type": "string",
+      "short": "c"
+    },
+    "conference": {
+      "type": "flag",
+      "short": "conf"
+    },
+    "division": {
+      "type": "flag",
+      "short": "d"
+    },
+    "matchup": {
+      "type": "list",
+      "short": "m"
+    }
+  },
+  "urls": {
+    "base": ""
+  }
+}
