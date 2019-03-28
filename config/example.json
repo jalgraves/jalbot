@@ -1,0 +1,17 @@
+{
+  "options": ["hello_world", "test-2", "test-3", "test4"],
+  "valid_args": {
+    "name": {
+      "type": "string",
+      "short": "n"
+      },
+    "age": {
+      "type": "string",
+      "short": "a"
+      },
+    "example": {
+      "type": "string",
+      "short": "e"
+    }
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "commands": {
+    "cmds": ["sports", "news", "stocks", "weather"],
+    "alt_names": {
+      "sp": "sports"
+    }
+  },
+  "bot_names": ["jalbot"],
+  "env": ["JAL_SLACK_TOKEN"]
+}

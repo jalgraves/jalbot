@@ -1,0 +1,20 @@
+{
+  "options": ["current", "forecast"],
+  "valid_args": {
+    "location": {
+      "type": "string",
+      "short": "l"
+    },
+    "days": {
+      "type": "string",
+      "short": "d"
+    }
+  },
+  "emojis": {
+    "partly-cloudy-day": ":mostly_sunny:",
+    "partly-cloudy-night": ":partly_cloudy_night:",
+    "clear-day": ":sunny:",
+    "clear-night": ":crescent_moon:",
+    "cloudy": ":cloud:"
+  }
+}

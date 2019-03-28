@@ -1,0 +1,6 @@
+{"env_vars": {
+    "SLACK_TOKEN": null,
+    "MYSPORTSFEEDS_API_KEY": null,
+    "NYT_API_KEY": null
+  }
+}

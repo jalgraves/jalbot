@@ -1,0 +1,9 @@
+{
+  "help": [
+    "_*JalBot Help*_",
+    "_*Usage: `jalbot [command] [option]`*_",
+    "_*Commands*_",
+    ">_*`sports [option] [-args]`: Get scores, standings, schedules, and team info*_",
+    "\n_*For detailed command help run `jalbot [command] help`*_"
+  ]
+}

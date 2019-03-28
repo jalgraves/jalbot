@@ -1,0 +1,13 @@
+{
+  "options": ["articles", "sports", "tech", "science"],
+  "valid_args": {
+    "subject": {
+      "type": "string",
+      "short": "s"
+    },
+    "number": {
+      "type": "string",
+      "short": "n"
+    }
+  }
+}

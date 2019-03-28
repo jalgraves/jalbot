@@ -1,0 +1,42 @@
+version: '3.5'
+
+networks:
+  backend:
+    name: backend
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 192.168.42.0/24
+
+services:
+  jalbot:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: "jalbot"
+    container_name: jalbot
+    networks:
+      - backend
+    volumes:
+      - ./config/:/jalbot/config/
+      - ./stats_cache/:/jalbot/stats_cache
+    environment:
+      - LOG_LEVEL
+      - JAL_SLACK_TOKEN
+      - MYSPORTSFEEDS_API_KEY
+      - MYSPORTSFEEDS_PASSWORD
+      - NYT_API_KEY
+      - DARKSKY_API_KEY
+      - GOOGLE_API_KEY
+  redis:
+    image: redis:5.0.0-alpine
+    container_name: jal_redis
+    networks:
+      - backend
+    volumes:
+      - ./redis_data/:/data
+  memcache:
+      image: memcached:1.5.12-alpine
+      container_name: jal_memcache
+      networks:
+          - backend
